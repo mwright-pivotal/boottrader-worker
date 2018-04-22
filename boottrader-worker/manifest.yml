@@ -1,0 +1,9 @@
+﻿---
+applications:
+- name: ci-boottrader-worker
+  memory: 1024MB
+  instances: 1
+  path: .
+  services: [df-rabbit]
+  buildpack: hwc_buildpack
+  stack: windows2012R2
